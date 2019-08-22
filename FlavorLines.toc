@@ -1,0 +1,19 @@
+## Interface: 80200
+## Title: |cffABD473FlavorLines|r
+## Notes: Adds useless flashy flavor lines to the game.
+## SavedVariables: FlavorLinesConfig
+
+enUS/Strings.lua
+
+FlavorLinesConfig.lua
+UtilData.lua
+Display/FlavorDisplayLib.lua
+Display/FlavorHeadFrame.lua
+Events/OnBattleStarted.lua
+VoiceLines.lua
+VoiceLinesHandler.lua
+CreatureScripts.lua
+CreatureScriptsMappings.lua
+CreatureScriptsHandler.lua
+
+Display/FlavorHeadFrame.xml
