@@ -1,7 +1,9 @@
-## Interface: 80200
+## Interface: 11302
 ## Title: |cffABD473FlavorLines|r
 ## Notes: Adds useless flashy flavor lines to the game.
 ## SavedVariables: FlavorLinesConfig
+## Version: 0.1
+## Author: Koward
 
 enUS/Strings.lua
 

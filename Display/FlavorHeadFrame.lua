@@ -1,5 +1,7 @@
 function FlavorHeadFrame_OnLoad(self)
-    self:RegisterEvent("TALKINGHEAD_REQUESTED");
+    if (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE) then
+        self:RegisterEvent("TALKINGHEAD_REQUESTED");
+    end
     self:RegisterEvent("SOUNDKIT_FINISHED");
     self:RegisterEvent("LOADING_SCREEN_ENABLED");
     self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
@@ -26,7 +28,7 @@ local function CloseAfterVO(self)
 end
 
 function FlavorHeadFrame_OnEvent(self, event, ...)
-    if (event == "TALKINGHEAD_REQUESTED") then
+    if (WOW_PROJECT_ID == WOW_PROJECT_MAINLINE and event == "TALKINGHEAD_REQUESTED") then
         FlavorHeadFrame_CloseImmediately(); -- Blizzard content has priority over the frame
     elseif (event == "SOUNDKIT_FINISHED") then
         local voHandle = ...;
